@@ -13,7 +13,7 @@ const output = (input, file, format, plugins) => ({
 })
 
 export default [
-    output('./src/main.js', './dist/mapbox-gl-flatgeobuf.js', 'umd', [commonjs()]),
-    output('./src/main.js', './dist/mapbox-gl-flatgeobuf.min.js', 'umd', [commonjs(), terser()]),
-    output('./src/main.js', './dist/mapbox-gl-flatgeobuf.esm.js', 'esm', [commonjs()])
+    output('./src/main.js', './dist/mapbox-gl-flatgeobuf.js', 'umd', [resolve({ browser: true}),commonjs()]),
+    output('./src/main.js', './dist/mapbox-gl-flatgeobuf.min.js', 'umd', [resolve({ browser: true}),commonjs(), terser()]),
+    output('./src/main.js', './dist/mapbox-gl-flatgeobuf.esm.js', 'esm', [resolve({ browser: true}),commonjs()])
 ]

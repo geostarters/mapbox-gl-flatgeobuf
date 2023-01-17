@@ -1,6 +1,10 @@
 # mapbox-gl-flatgeobuf
 A little library provides a tiled approach to consuming flatgeobuf files.
 
+
+>Update to "flatgeobuf": "^3.24.1"
+
+
 **Note** This library is compatible with both mapbox-gl and maplibre-gl.
 
 ### Installation

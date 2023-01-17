@@ -1,4 +1,4 @@
-import {deserialize} from 'flatgeobuf/lib/cjs/geojson'
+import {geojson} from 'flatgeobuf'
 import tilebelt from '@mapbox/tilebelt'
 
 export default class FlatGeobuf {
@@ -114,7 +114,7 @@ export default class FlatGeobuf {
   }
 
   _loadData (bounds) {
-    return deserialize(this._flatGeobufOptions.url, fgBoundingBox(bounds))
+    return geojson.deserialize(this._flatGeobufOptions.url, fgBoundingBox(bounds))
   }
 }
 
