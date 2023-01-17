@@ -2,7 +2,12 @@
 A little library provides a tiled approach to consuming flatgeobuf files.
 
 
->Update to "flatgeobuf": "^3.24.1"
+### Updated
+
+- Update to "flatgeobuf": "^3.24.1"
+
+Browser version
+[https://geostarters.github.io/mapbox-gl-flatgeobuf/dist/mapbox-gl-flatgeobuf.min.js](https://geostarters.github.io/mapbox-gl-flatgeobuf/dist/mapbox-gl-flatgeobuf.min.js)
 
 
 **Note** This library is compatible with both mapbox-gl and maplibre-gl.
